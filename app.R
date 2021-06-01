@@ -1,4 +1,9 @@
 library(shiny)
+library(gridExtra)
+library(tidyverse)
+library(ggplot2)
+library(data.table)
+
 year2018  = fread("2018.csv", header = TRUE, 
                         stringsAsFactors = FALSE, data.table = F)
 year2019  = fread("2019.csv", header = TRUE, 
